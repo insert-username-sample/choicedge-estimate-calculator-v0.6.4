@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { User } from "lucide-react";
+import logo from "../assets/choicedge-logo.png";
 
 function Header() {
   return (
     <header className="bg-white shadow-md py-3 px-6 flex items-center justify-between">
       {/* Logo on the left */}
       <Link to="/">
-        <img src="https://imgur.com/Y6cKH3R" alt="Choicedge Logo" className="h-16 w-auto object-contain" />
+        <img src={logo} alt="Choicedge Logo" className="h-16 w-auto object-contain" />
       </Link>
 
       {/* Navigation Links on the right */}

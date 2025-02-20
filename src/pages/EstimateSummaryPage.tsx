@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Download, Printer, Phone } from 'lucide-react';
+import logo from '../assets/choicedge-logo.png';
 import Layout from '../components/Layout';
 // @ts-ignore
 import html2pdf from 'html2pdf.js';
@@ -248,7 +248,7 @@ function EstimateSummaryPage() {
     logoContainer.style.justifyContent = 'center';
     
     const logoImg = document.createElement('img');
-    logoImg.src = "https://imgur.com/Y6cKH3R";
+    logoImg.src = logo;
     logoImg.style.width = '300px';
     logoImg.style.height = 'auto';
     logoContainer.appendChild(logoImg);
@@ -483,7 +483,7 @@ function EstimateSummaryPage() {
                 <dd className="text-lg font-semibold text-gray-900">₹ {(calculateSubtotal() * 1.31 * 0.18).toLocaleString('en-IN')}</dd>
               </div>
               <div className="pt-6 flex justify-between items-center border-t-2 border-gray-300">
-                <dt className="text-xl font-bold text-gray 900">Grand Total</dt>
+                <dt className="text-xl font-bold text-gray-900">Grand Total</dt>
                 <dd className="text-2xl font-bold text-blue-600">₹ {(calculateSubtotal() * 1.31 * 1.18).toLocaleString('en-IN')}</dd>
               </div>
             </dl>
